@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="heatesLabelcell" id="gTV-IL-0wX" customClass="HeatesLabelsCCell" customModule="Recipe_Search" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="46"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-5f-ppO">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="46"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BVd-he-8WE">
+                                <rect key="frame" x="10" y="18" width="10" height="10"/>
+                                <color key="backgroundColor" red="0.5237524509" green="0.043152824040000003" blue="0.094829611480000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="gof-4d-AW6"/>
+                                    <constraint firstAttribute="width" constant="10" id="j0F-xa-Zck"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="heate lable" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayf-AH-AaY">
+                                <rect key="frame" x="30" y="5" width="328" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="w7H-WT-L1S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ayf-AH-AaY" secondAttribute="trailing" constant="10" id="HSI-8B-Wvb"/>
+                            <constraint firstItem="Ayf-AH-AaY" firstAttribute="leading" secondItem="BVd-he-8WE" secondAttribute="trailing" constant="10" id="QpU-Dq-3or"/>
+                            <constraint firstItem="BVd-he-8WE" firstAttribute="leading" secondItem="LeN-5f-ppO" secondAttribute="leading" constant="10" id="ff1-Vn-WQs"/>
+                            <constraint firstItem="Ayf-AH-AaY" firstAttribute="centerY" secondItem="LeN-5f-ppO" secondAttribute="centerY" constant="1" id="umj-PY-SUH"/>
+                            <constraint firstItem="BVd-he-8WE" firstAttribute="centerY" secondItem="LeN-5f-ppO" secondAttribute="centerY" id="vkj-mH-EUE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LeN-5f-ppO" secondAttribute="bottom" id="0tS-r4-GPv"/>
+                <constraint firstAttribute="trailing" secondItem="LeN-5f-ppO" secondAttribute="trailing" id="8Kt-0k-ZOK"/>
+                <constraint firstItem="LeN-5f-ppO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YP8-oQ-UgA"/>
+                <constraint firstItem="LeN-5f-ppO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YXO-II-AXQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="368" height="46"/>
+            <connections>
+                <outlet property="heatLabel" destination="Ayf-AH-AaY" id="IoY-sX-rLy"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="111.16071428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
